@@ -1,0 +1,78 @@
+@use '../../../../scss/components/all_style';
+@use '../../../../scss/components/colors' as *;
+
+header{
+    position: relative;
+    background-color: white;
+
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        .premier{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 2rem;
+            padding: 0 1.5rem 0 1.5rem;
+            .header-first{
+                // border: $border1;
+                i{
+                    color: $primary;
+                    font-size: 4rem;
+                    margin-left: 20%;
+                    cursor: pointer;
+                    transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19);
+                }
+                i:hover{
+                    color: $black;
+                }
+            }
+
+            .header-second{
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+                align-items: center;
+                a{
+                    color: $black;
+                    font-size: 1.4rem;
+                }
+                .hello{
+                    color: $primary;
+                    border:$border_2;
+                    border-radius: .5rem;
+                    padding: .1rem .3rem .1rem .3rem;
+                    transition: all .3s ease-in-out;
+                }
+                .hello:hover{
+                    background-color: $primary;
+                    color: white;
+                }
+            }
+        }
+        .deuxieme{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+
+            .header_text{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                h3{
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                    margin-bottom:.3rem;
+                }
+                span{
+                    text-align: center;
+                    font-size: 1.2rem;
+                    margin-bottom: .2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Import de mes style Scss */
+@use './scss/components/all_style';
+@use './scss/components/colors';
+
