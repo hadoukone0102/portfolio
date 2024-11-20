@@ -11,10 +11,10 @@ section{
     height: auto;
     margin-bottom: 2rem;
     .presentation_box{
-         background-color: $primary;
         .pre_content{
             display: flex;
             flex-direction: column;
+            background-color: $primary;
             .content_text{
                 display: flex;
                 flex-direction: column;
@@ -37,66 +37,68 @@ section{
                     }
                 }
             }
-      
+        }
 
-            .content_box{
-                background-color: white;
-                padding: 2rem;
-                border-radius: 1rem;
-                box-shadow: $shadow;
-                margin: 2rem;
-                .box_pre{
-                    display: grid;
-                    grid-template-columns: repeat(3,1fr);
-                    gap: 20px;
-                    .box{
-                        border-left: $border_3;
-                        padding: 1rem;
+        .content_box{
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: $shadow;
+            margin: 2rem;
+            position: relative;
+            margin-top: -5rem;
+            .box_pre{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 20px;
+                .box{
+                    border-left: $border_3;
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    i{
+                        text-align: center;
+                        font-size: 3rem;
+                        padding: .2rem;
+                        color: $primary;
+                    }
+                    .box_title{
+                        text-align: center;
+                        font-weight: bolder;
+                        color: $black;
+                        margin-bottom: 1rem;
+                    }
+                    .box_text{
+                        text-align: center;
                         display: flex;
                         flex-direction: column;
-                        i{
+                        span{
                             text-align: center;
-                            font-size: 3rem;
-                            padding: .2rem;
-                            color: $primary;
-                        }
-                        .box_title{
-                            text-align: center;
-                            font-weight: bolder;
                             color: $black;
                             margin-bottom: 1rem;
                         }
-                        .box_text{
-                            text-align: center;
+
+                        a{
+                            color: $primary;
+                            font-size: 1.1rem;
+                            margin-bottom: 1rem;
+                        }
+                        h3{
+                            color: $black;
+                            font-size: 1rem;
+                            margin-bottom: 2rem;
+                        }
+                        .tools{
                             display: flex;
                             flex-direction: column;
                             span{
                                 text-align: center;
-                                color: $black;
-                                margin-bottom: 1rem;
-                            }
-
-                            a{
-                                color: $primary;
-                                font-size: 1.1rem;
-                                margin-bottom: 1rem;
-                            }
-                            h3{
-                                color: $black;
-                                font-size: 1rem;
-                                margin-bottom: 2rem;
-                            }
-                            .tools{
-                                display: flex;
-                                flex-direction: column;
-                                span{
-                                    text-align: center;
-                                }
                             }
                         }
                     }
                 }
             }
         }
+       
     }
 }
