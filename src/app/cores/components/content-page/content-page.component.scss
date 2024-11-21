@@ -53,6 +53,8 @@ section{
                 gap: 20px;
                 .box{
                     border-left: $border_3;
+                    border-right: $border_3;
+                    border-radius: .5rem;
                     padding: 1rem;
                     display: flex;
                     flex-direction: column;
@@ -96,6 +98,97 @@ section{
                             }
                         }
                     }
+                }
+            }
+        }
+       
+    }
+}
+
+/** design de la partie work **/
+.work{
+    height: auto;
+    margin-bottom: 2rem;
+    .work_box{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .title{
+            text-align: center;
+            font-size: 1.5rem;
+            color: $black;
+            font-weight: bold;
+        }
+        .sub_title{
+            text-align: center;
+            font-size: 1rem;
+            color: $black;
+        }
+        .work_content{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .work_gril{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 20px;
+                .grill{
+                    border: $border1;
+                    border-radius: 1rem;
+                    position: relative;
+                    height: auto;
+                    width: 20rem;
+                    margin: .5rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 1rem;
+                        z-index: 1;
+                    }
+                    .grill_text{
+                        position: absolute;
+                        top: 20%;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 1rem;
+                        span{
+                            text-align: center;
+                            display: block;
+                            color: $black;
+                            font-size: 1.2rem;
+                            margin-bottom: 1rem;
+                        }
+                        a{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            i{
+                                font-size: 2rem;
+                                font-weight: bolder;
+                                align-items: center;
+                            }
+                        }
+                        .btn{
+                            color: $primary;
+                            border:$border_2;
+                            border-radius: .5rem;
+                            padding: .1rem .3rem .1rem .3rem;
+                            transition: all .3s ease-in-out;
+                            width: auto;
+                        }
+                        .btn:hover{
+                            background-color: $primary;
+                            color: white;
+                        }
+                    }
+                }
+                .grill:hover{
+                    background-color: $black;
+                    color: white;
+                    z-index: 2;
                 }
             }
         }
