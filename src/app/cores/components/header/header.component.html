@@ -6,7 +6,17 @@
                 <i class="bi bi-amd"></i>
             </div>
             <div class="header-second">
-                <a href="#" class="">MentorShip</a>
+                <!-- <a href="#" class="">MentorShip</a> -->
+                 <!-- Dropdown pour les langues -->
+                <div class="language-dropdown">
+                    <button class="dropdown-toggle" id="languageToggle">
+                    🌍 Français
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" (click)="changeLanguage('fr')">Français</a></li>
+                        <li><a href="#" (click)="changeLanguage('en')">English</a></li>
+                    </ul>
+                </div>
                 <a href="#" class="hello">Say Hello</a>
             </div>
         </div>
