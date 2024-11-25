@@ -1,4 +1,4 @@
-@use './colors';
+@use './colors' as *;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 *{
@@ -17,3 +17,38 @@ html{
     scroll-padding-top:6,7rem;
     font-size: 62,5%;
 }
+
+.btn{
+    color: $primary;
+    font-size: 1.1rem;
+    border: $border_2;
+    border-radius: 0.5rem;
+    padding: 0.1rem 0.3rem;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        background-color: $primary;
+        color: white;
+    }
+}
+/* Responsive value */
+$breakpoint-small: 450px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 900px;
+/* Gestion des responsive du footer */
+
+// Mixins pour les breakpoints
+@mixin respond($breakpoint) {
+    @if $breakpoint == small {
+      @media (max-width: 450px) { @content; }
+    } @else if $breakpoint == medium {
+      @media (max-width: 768px) { @content; }
+    } @else if $breakpoint == large { 
+      @media (max-width: 900px) { @content; }
+    }
+}
+  
+
+  
+  

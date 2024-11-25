@@ -1,4 +1,4 @@
-@use '../../../../scss/components/all_style';
+@use '../../../../scss/components/all_style' as *;
 @use '../../../../scss/components/colors' as *;
 
 section{
@@ -51,6 +51,15 @@ section{
                 display: grid;
                 grid-template-columns: repeat(3,1fr);
                 gap: 20px;
+
+                @include respond(large) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                    
+                @include respond(small) {
+                    grid-template-columns: 1fr;
+                }
+                    
                 .box{
                     border-left: $border_3;
                     border-right: $border_3;
@@ -120,22 +129,32 @@ section{
             color: $black;
             font-weight: bold;
         }
+
         .sub_title{
             text-align: center;
             font-size: 1rem;
             color: $black;
         }
+
         .work_content {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
-        
             .work_gril {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(2,auto);
-        
+                grid-template-rows: repeat(3,auto);
+                width: auto;
+                @include respond(large) {
+                    grid-template-columns: repeat(2, 1fr);
+                    //box-shadow: $shadow;
+                }
+                
+                @include respond(medium) {
+                    grid-template-columns: 1fr;
+                }
+                
                 .grill {
                     border: $border1;
                     border-radius: 1rem;
@@ -144,6 +163,9 @@ section{
                     width: 20rem;
                     margin: 0.5rem;
                     overflow: hidden;
+                    @include respond(large) {
+                        box-shadow: $shadow;
+                    }
         
                     img {
                         width: 100%;
@@ -166,7 +188,7 @@ section{
                         text-align: center;
                         opacity: 0; /* Initially hidden */
                         z-index: 2;
-                        transition: opacity 0.3s ease-in-out;
+                        transition: all 0.3s ease-in-out;
         
                         span {
                             color: white;
@@ -201,7 +223,7 @@ section{
         
                     &:hover {
                         background-color: $black;
-        
+                        transition:all .3s ease;
                         img {
                             opacity: 0; /* Hide the image */
                         }
