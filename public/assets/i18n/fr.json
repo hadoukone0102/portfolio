@@ -5,7 +5,66 @@
     "SAY_HELLO": "Dites Bonjour",
 
     "TITLE": "Designer, Développeur Frontend & Backend",
-    "SUBTITLE": "Je conçois et code des choses magnifiquement simples, et j'adore ce que je fais."
+    "SUBTITLE": "Je conçois et code des choses magnifiquement simples, et j'adore ce que je fais.",
 
+    "PRESENTATION": {
+      "GREETING": "Bonjour, je suis Hadou Kone. Ravi de vous rencontrer.",
+      "INTRO": "Depuis que j'ai commencé mon parcours en tant que développeur Fullstack il y a 2 ans, j'ai travaillé à distance pour des agences et collaboré avec des personnes talentueuses pour créer des produits numériques pour les entreprises et les consommateurs. Je suis confiant, naturellement curieux et je travaille constamment à améliorer mes compétences."
+    },
+    "DESIGNER": {
+      "TITLE": "Designer",
+      "DESCRIPTION": "Je valorise une structure de contenu simple, des modèles de design épurés et des interactions réfléchies.",
+      "ENJOY_DESIGNING": "Ce que j'aime concevoir :",
+      "DESIGN_TYPES": "UX, UI, Web, Apps, Logos",
+      "TOOLS": "Outils de design :",
+      "TOOLS_LIST": ["Affinity Designer", "Figma", "Canva"]
+    },
+    "FRONTEND_DEVELOPER": {
+      "TITLE": "Développeur Frontend",
+      "DESCRIPTION": "J'aime coder à partir de zéro et donner vie aux idées dans le navigateur.",
+      "LANGUAGES": "Langages que je maîtrise :",
+      "LANGUAGES_LIST": ["HTML", "CSS", "Sass", "Bootstrap", "Tailwind CSS", "Git"],
+      "DEV_TOOLS": "Outils de développement :",
+      "TOOLS_LIST": ["Angular", "JavaScript", "TypeScript", "WordPress", "Cpanel", "Github & GitLab"]
+    },
+    "BACKEND_DEVELOPER": {
+      "TITLE": "Développeur Backend",
+      "DESCRIPTION": "J'aime créer la logique et la structure qui alimentent les applications. Mon objectif est de créer des systèmes fiables, évolutifs et efficaces qui gèrent les données et assurent une communication fluide entre le client et le serveur.",
+      "LANGUAGES": "Langages que je maîtrise :",
+      "LANGUAGES_LIST": ["PHP", "Laravel", "TypeScript", "JavaScript", "Dart", "Flutter"],
+      "DEV_TOOLS": "Outils de développement :",
+      "TOOLS_LIST": ["MySQL", "MongoDB", "PostgreSQL", "API REST"]
+    },
+    
+    "WORK": {
+      "TITLE": "Mes Réalisations Récentes",
+      "SUBTITLE": "Voici quelques projets de design sur lesquels j'ai travaillé. Vous voulez en voir plus ? Envoyez-moi un email.",
+      "VIEW_WEBSITE": "Voir le site",
+      "VIEW_BACKOFFICE": "Voir le Back Office",
+      "PROJECT1": {
+        "DESCRIPTION": "Siglass, entreprise spécialisée dans le vitrage et la menuiserie."
+      },
+      "PROJECT2": {
+        "DESCRIPTION": "PGCP, plateforme de gestion centralisée pour les paroissiens en Côte d'Ivoire."
+      },
+      "PROJECT3": {
+        "DESCRIPTION": "Maparoisse, back office pour toutes les plateformes de demandes de messe, dons, fonds de culte et autres."
+      },
+      "PROJECT4": {
+        "DESCRIPTION": "Kofasante, application mobile pour la mesure de la tension artérielle, glycémie, moyens de paiement, prises de rendez-vous, et autres."
+      },
+      "PROJECT5": {
+        "DESCRIPTION": "Plateforme de gestion des églises Mukasa."
+      },
+      "PROJECT6": {
+        "DESCRIPTION": "Plateforme de gestion des églises Ste Raphaël."
+      },
+      "PROJECT7": {
+        "DESCRIPTION": "Plateforme de gestion des églises Kizito."
+      }
+    }
+    
+    
+    
   }
   

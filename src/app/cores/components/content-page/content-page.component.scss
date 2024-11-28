@@ -21,6 +21,7 @@ section{
                 align-items: center;
                 justify-content: center;
                 height: 60vh;
+                margin: 1rem;
 
                 h3{
                     text-align: center;
@@ -28,12 +29,18 @@ section{
                     font-size: 2rem;
                     font-weight: bolder;
                     margin-bottom: 1rem;
+                    @include respond (small){
+                        font-size: 1.5rem;
+                    }
                 }
                 .sub_content{
                     p{
                         text-align: center;
                         color: white;
                         font-size: 1.3rem;
+                        @include respond (small){
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
@@ -44,29 +51,37 @@ section{
             padding: 2rem;
             border-radius: 1rem;
             box-shadow: $shadow;
-            margin: 2rem;
+            margin: -5rem 2rem 2rem 2rem;
             position: relative;
-            margin-top: -5rem;
+           // margin-top: -5rem;
+            @include respond (small){
+                margin: -5rem 1rem 1rem 1rem;
+            }
             .box_pre{
                 display: grid;
                 grid-template-columns: repeat(3,1fr);
-                gap: 20px;
+                gap: 2px;
+                align-items: center;
+                justify-content: center;
 
                 @include respond(large) {
                     grid-template-columns: repeat(2, 1fr);
                 }
                     
-                @include respond(small) {
+                @include respond(medium) {
                     grid-template-columns: 1fr;
                 }
                     
                 .box{
-                    border-left: $border_3;
-                    border-right: $border_3;
                     border-radius: .5rem;
                     padding: 1rem;
                     display: flex;
                     flex-direction: column;
+                    margin-left: .5rem;
+                    @include respond(medium) {
+                        border-left: $border_3;
+                        border-right: $border_3;
+                    }
                     i{
                         text-align: center;
                         font-size: 3rem;
@@ -78,15 +93,21 @@ section{
                         font-weight: bolder;
                         color: $black;
                         margin-bottom: 1rem;
+
                     }
                     .box_text{
                         text-align: center;
                         display: flex;
                         flex-direction: column;
-                        span{
+                        .desc{
                             text-align: center;
                             color: $black;
                             margin-bottom: 1rem;
+                            @include respond (small){
+                                font-size: 1rem;
+                                display: block;
+                                padding: 1rem;
+                            }
                         }
 
                         a{
@@ -104,6 +125,7 @@ section{
                             flex-direction: column;
                             span{
                                 text-align: center;
+                                margin: .5rem;
                             }
                         }
                     }

@@ -4,7 +4,67 @@
     "LANGUAGE": "English",
     "SAY_HELLO": "Say Hello",
     "TITLE": "Designer, Frontend & Backend Developer",
-    "SUBTITLE": "I design and code beautifully simple things, and I love what I do."
+    "SUBTITLE": "I design and code beautifully simple things, and I love what I do.",
+    
+        "PRESENTATION": {
+          "GREETING": "Hi, I’m Hadou Kone. Nice to meet you.",
+          "INTRO": "Since I started my journey as a Fullstack Developer 2 years ago, I have worked remotely for agencies, and collaborated with talented people to create digital products for both businesses and consumers. I am quietly confident, naturally curious and constantly working to improve my skills."
+        },
+        "DESIGNER": {
+          "TITLE": "Designer",
+          "DESCRIPTION": "I value simple content structure, clean design patterns, and thoughtful interactions.",
+          "ENJOY_DESIGNING": "Things I enjoy designing:",
+          "DESIGN_TYPES": "UX, UI, Web, Apps, Logos",
+          "TOOLS": "Design Tools:",
+          "TOOLS_LIST": ["Affinity Designer", "Figma", "Canva"]
+        },
+        "FRONTEND_DEVELOPER": {
+          "TITLE": "Frontend Developer",
+          "DESCRIPTION": "I like to code things from scratch, and enjoy bringing ideas to life in the browser.",
+          "LANGUAGES": "Languages I speak:",
+          "LANGUAGES_LIST": ["HTML", "CSS", "Sass", "Bootstrap", "Tailwind CSS", "Git"],
+          "DEV_TOOLS": "Dev Tools:",
+          "TOOLS_LIST": ["Angular", "JavaScript", "TypeScript", "WordPress", "Cpanel", "Github & GitLab"]
+        },
+        "BACKEND_DEVELOPER": {
+          "TITLE": "Backend Developer",
+          "DESCRIPTION": "I enjoy building the logic and structure that powers applications. My focus is on creating reliable, scalable, and efficient systems that handle data and ensure seamless communication between the client and server.",
+          "LANGUAGES": "Languages I speak:",
+          "LANGUAGES_LIST": ["PHP", "Laravel", "TypeScript", "JavaScript", "Dart", "Flutter"],
+          "DEV_TOOLS": "Dev Tools:",
+          "TOOLS_LIST": ["MySQL", "MongoDB", "PostgreSQL", "API REST"]
+        },
+        
+        "WORK": {
+            "TITLE": "My Recent Work",
+            "SUBTITLE": "Here are a few past design projects I've worked on. Want to see more? Email me.",
+            "VIEW_WEBSITE": "View website",
+            "VIEW_BACKOFFICE": "View Back Office",
+            "PROJECT1": {
+            "DESCRIPTION": "Siglass company specializing in glazing and carpentry."
+            },
+            "PROJECT2": {
+            "DESCRIPTION": "PGCP, centralized management platform for parishioners in Ivory Coast."
+            },
+            "PROJECT3": {
+            "DESCRIPTION": "Maparoisse, back office of all mass request platforms, donations, worship funds, and more."
+            },
+            "PROJECT4": {
+            "DESCRIPTION": "Kofasante, mobile application for blood pressure measurement, blood sugar, payment means, appointments, and more."
+            },
+            "PROJECT5": {
+            "DESCRIPTION": "Mukasa church management platform."
+            },
+            "PROJECT6": {
+            "DESCRIPTION": "Ste Raphael church management platform."
+            },
+            "PROJECT7": {
+            "DESCRIPTION": "Kizito church management platform."
+            }
+        }
+        
+          
+    
       
 }
   
