@@ -23,15 +23,15 @@
       "TITLE": "Développeur Frontend",
       "DESCRIPTION": "J'aime coder à partir de zéro et donner vie aux idées dans le navigateur.",
       "LANGUAGES": "Langages que je maîtrise :",
-      "LANGUAGES_LIST": ["HTML", "CSS", "Sass", "Bootstrap", "Tailwind CSS", "Git"],
+      "LANGUAGES_LIST": ["HTML", "CSS", "Sass/Scss", "Angular", "TypeScript","JavaScript"],
       "DEV_TOOLS": "Outils de développement :",
-      "TOOLS_LIST": ["Angular", "JavaScript", "TypeScript", "WordPress", "Cpanel", "Github & GitLab"]
+      "TOOLS_LIST": ["Bootstrap", "Tailwind CSS", "Git", "WordPress", "Cpanel", "Github & GitLab"]
     },
     "BACKEND_DEVELOPER": {
       "TITLE": "Développeur Backend",
       "DESCRIPTION": "J'aime créer la logique et la structure qui alimentent les applications. Mon objectif est de créer des systèmes fiables, évolutifs et efficaces qui gèrent les données et assurent une communication fluide entre le client et le serveur.",
       "LANGUAGES": "Langages que je maîtrise :",
-      "LANGUAGES_LIST": ["PHP", "Laravel", "TypeScript", "JavaScript", "Dart", "Flutter"],
+      "LANGUAGES_LIST": ["PHP", "Laravel", "TypeScript", "JavaScript", "Flutter"],
       "DEV_TOOLS": "Outils de développement :",
       "TOOLS_LIST": ["MySQL", "MongoDB", "PostgreSQL", "API REST"]
     },
@@ -62,9 +62,29 @@
       "PROJECT7": {
         "DESCRIPTION": "Plateforme de gestion des églises Kizito."
       }
+    },
+    
+    "FOOTER": {
+      "START_PROJECT": {
+        "TITLE": "Lancer un projet",
+        "DESCRIPTION": "Intéressé à travailler ensemble ? Nous devrions organiser une discussion. Je paierai le café.",
+        "BUTTON": "Allons-y"
+      },
+      "SECOND_SECTION": {
+        "QUOTE": "Vivre, apprendre, et évoluer un jour à la fois.",
+        "SOCIAL": {
+          "FACEBOOK": "Facebook",
+          "INSTAGRAM": "Instagram",
+          "LINKEDIN": "LinkedIn",
+          "GITHUB": "GitHub",
+          "GITLAB": "GitLab"
+        },
+        "MESSAGE": "Réalisé à la main par moi en 2024",
+        "SIGNATURE": "Fait avec Angular"
+      }
     }
     
-    
+     
     
   }
   
