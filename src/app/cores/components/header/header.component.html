@@ -6,25 +6,23 @@
                 <i class="bi bi-amd"></i>
             </div>
             <div class="header-second">
-                 <!-- Dropdown pour les langues -->
-                <div class="language-dropdown">
-                    <button class="dropdown-toggle" id="languageToggle">
-                    🌍 {{'LANGUAGE' | translate }}
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#" (click)="changeLanguage('en')">English</a></li>
-                        <li><a href="#" (click)="changeLanguage('fr')">Français</a></li>
-                    </ul>
+                <div class="change">
+                    <a href="#" class="langues active"   [class.active]="currentLanguage === 'en'" (click)="changeLanguage('en')">🌍En</a>
+                    <a href="#" class="langues"   [class.active]="currentLanguage === 'fr'" (click)="changeLanguage('fr')">🌍Fr</a>
                 </div>
-                <a href="#" class="hello">{{ 'SAY_HELLO' | translate}}</a>
-            </div>
+                <!-- Autre contenu -->
+                <a href="#" class=" btn hello">{{ 'SAY_HELLO' | translate }}</a>
+            </div>  
+            <div class="menu" (click)="toggleMenu()">
+                <i class="bi bi-list"></i>
+            </div>            
         </div>
         <!-- première partie du header -->
         <!-- deuxième partie du header -->
         <div class="deuxieme">
             <div class="header_text">
-                <h3 class="title">Designer, Frontend & Backend Developer</h3>
-                <span>I design and code beautifully simple things, and I love what I do.</span>
+                <h3 class="title">{{ 'TITLE' | translate }}</h3>
+                <span>{{ 'SUBTITLE' | translate }}</span>
             </div>
             <div class="header_img">
                 <img src="https://mattfarley.ca/img/mf-avatar.svg" alt="">
