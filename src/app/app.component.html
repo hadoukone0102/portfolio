@@ -1,1 +1,15 @@
+<!----------------------------------- loader *ngIf="loaderService.loading" ----------------------------------->
+<div *ngIf="loaderService.loading" class="loader {{loaderService.loaderFadeOut ? 'fadeOut' : ''}}">
+    <!-- Logo -->
+    <img src="images/logo.png" alt="logo" class="logo">
+
+    <!-- Animated Dots -->
+    <div class="dot-elastic">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<!----------------------------------- loader ----------------------------------->
 <router-outlet />

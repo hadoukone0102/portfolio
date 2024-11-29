@@ -1,0 +1,93 @@
+@use './colors' as *;
+/**
+ * =====================================================================
+ * Container du loader
+ * =====================================================================
+ **/
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+
+  @media (min-width: 992px) {
+    padding: 2rem 0;
+  }
+
+  @media (max-width: 991.98px) {
+    padding: 4rem 0;
+  }
+
+  img {
+    margin-bottom: 0.5rem; /* Adds spacing between the logo and the dots */
+    max-width: 100px;
+    height: auto;
+    animation: image-color 1.5s infinite ease-in-out;
+  }
+
+  /**
+   * Animation Keyframes for the image
+   **/
+  @keyframes image-color {
+    0%, 80%, 100% {
+      filter: brightness(1) hue-rotate(0deg);
+    }
+    50% {
+      filter: brightness(1.2) hue-rotate(180deg);
+    }
+  }
+}
+
+  /**
+   * =====================================================================
+   * trois points du loader
+   * =====================================================================
+   **/
+  .dot-elastic {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px; /* Adjust for dot spacing */
+  }
+  
+  .dot-elastic span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: elastic 1.5s infinite;
+  }
+  
+  .dot-elastic span:nth-child(1) {
+    background-color: #007bff; /* Blue */
+  }
+  
+  .dot-elastic span:nth-child(2) {
+    background-color: #ff5722; /* Orange */
+    animation-delay: 0.2s;
+  }
+  
+  .dot-elastic span:nth-child(3) {
+    background-color: #4caf50; /* Green */
+    animation-delay: 0.4s;
+  }
+  
+  /**
+   * Animation Keyframes
+   **/
+  @keyframes elastic {
+    0%, 80%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+  }
+  
