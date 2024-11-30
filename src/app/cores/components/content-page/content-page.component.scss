@@ -156,6 +156,14 @@ section{
             text-align: center;
             font-size: 1rem;
             color: $black;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .email{
+                color: $primary;
+                font-size: 1rem;
+            }
         }
 
         .work_content {

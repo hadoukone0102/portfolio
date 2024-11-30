@@ -21,15 +21,15 @@
             height: 10rem auto;
             z-index: 2;
 
-            // @include respond(medium) {
-            //     flex-direction: column;
-            //     height: auto;
-            //     margin: 2rem 3rem -12rem 3rem;
-            // }
-
-            @include respond(medium){
-                margin: 2rem 3rem -10rem 3rem;
+            @include respond(medium) {
+                flex-direction: column;
+                height: auto;
+                margin: 2rem 3rem -12rem 3rem;
             }
+
+            // @include respond(medium){
+            //     margin: 2rem 3rem -10rem 3rem;
+            // }
 
             h3{
                 color: white;

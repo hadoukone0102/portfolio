@@ -38,7 +38,8 @@
     
     "WORK": {
       "TITLE": "Mes Réalisations Récentes",
-      "SUBTITLE": "Voici quelques projets de design sur lesquels j'ai travaillé. Vous voulez en voir plus ? Envoyez-moi un email.",
+      "SUBTITLE": "Voici quelques projets de design sur lesquels j'ai travaillé. Vous voulez en voir plus ? ",
+      "E-MAIL": " Envoyez-moi un email.",
       "VIEW_WEBSITE": "Voir le site",
       "VIEW_BACKOFFICE": "Voir le Back Office",
       "PROJECT1": {

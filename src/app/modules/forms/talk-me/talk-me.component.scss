@@ -1,0 +1,128 @@
+@use '../../../../scss/components/all_style' as *;
+@use '../../../../scss/components/colors' as *;
+
+header{
+    position: relative;
+    background-color: white;
+    border-bottom: $border1;
+    
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        
+        .premier{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 2rem;
+            padding: 0 1.5rem;
+            position: relative;
+
+            @include respond (small){
+                margin: 1rem;
+            }
+
+            .header-first{
+                i{
+                    color: $primary;
+                    font-size: 3rem;
+                    margin-left: 20%;
+                    cursor: pointer;
+                    transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19);
+                    @include respond (small){
+                        margin: 0;
+                        font-size: 2rem;
+                    }
+                    @include respond (medium){
+                        font-size: 2rem;
+                    }
+                }
+               
+                i:hover{
+                    color: $black;
+                }
+            }
+
+            .header-second {
+                display: flex;
+                flex-direction: row;
+                gap: .5rem;
+                align-items: center;
+                
+                @include respond(small) {
+                  border: $border1;
+                  flex-direction: column-reverse;
+                  align-items: center;
+                  justify-content: center;
+                  position: absolute;
+                  left: 0;
+                  top: 100%;
+                  width: 100%;
+                  padding: .5rem;
+                  display: none;
+
+                  &.active{
+                    display: flex;
+                  }
+                }
+
+                .change{
+                    display: flex;
+                    flex-direction: row;
+
+                    @include respond(small){
+                        flex-direction: row;
+                        background-color: white;
+                    }
+
+                    .langues {
+                        font-size: 1rem;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 1rem;
+                        @include respond(small) {
+                          margin-left: .5rem;
+                        }
+                    }
+      
+                    .langues.active{
+                        background-color: $primary;
+                        color: white;
+                        padding: .5rem;
+                        border-radius: 1rem;
+                    }
+                    
+                }
+              
+                
+                a {
+                  color: $black;
+                  font-size: 1.4rem;
+                }
+              
+                .hello {
+                    cursor: pointer;
+                    border: $border1;
+                    padding:0 .5rem;
+                    border-radius:1rem;
+                    margin-left: 1rem;
+                    @include respond (small){
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    i{
+                        font-size: 2rem;
+                        color: #bababa;
+                    }
+                }
+            }
+              
+        }
+      
+    }
+}

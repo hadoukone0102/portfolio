@@ -6,25 +6,26 @@ import { LoaderService } from './cores/services/loader.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CommonModule],
+  imports: [RouterOutlet, CommonModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'Portfolio';
+  private isFirstLoad = true; // Indicateur pour le premier chargement
 
-  constructor(
-    public loaderService :LoaderService,
-    private router: Router,
-  ){}
+  constructor(public loaderService: LoaderService, private router: Router) {}
 
   ngOnInit(): void {
-    this.executeLoaderActions();
+    this.executeLoaderActions(); // Exécution lors du premier chargement
 
-     // Écoute les événements de navigation pour réexécuter les actions à chaque changement de route
-     this.router.events.subscribe(event => {
+    // Exécution pour les changements de route
+    this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        this.executeLoaderActions();
+        if (!this.isFirstLoad) {
+          this.executeLoaderActions();
+        }
+        this.isFirstLoad = false; // Désactiver le flag après le premier chargement
       }
     });
   }
@@ -45,5 +46,4 @@ export class AppComponent implements OnInit{
       this.loaderService.LoaderFlag('preloading', true);
     }, 2000);
   }
-
 }

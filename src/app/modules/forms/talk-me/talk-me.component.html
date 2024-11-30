@@ -1,0 +1,23 @@
+<header class="header">
+    <div class="header-content">
+        <!-- première partie du header -->
+        <div class="premier">
+            <div class="header-first">
+                <i class="bi bi-amd"></i>
+            </div>
+            <div class="header-second">
+                <div class="change">
+                    <a href="#" class="langues active"  [class.active]="currentLanguage === 'en'" (click)="changeLanguage('en')">🌍En</a>
+                    <a href="#" class="langues"   [class.active]="currentLanguage === 'fr'" (click)="changeLanguage('fr')">🌍Fr</a>
+                </div>
+                <!-- Autre contenu -->
+                <a (click)="toggleMenu()" class="hello"><i class="bi bi-list"></i></a>
+            </div>         
+        </div>
+        <!-- première partie du header -->
+    </div>
+</header>
+
+<section class="forms">
+    
+</section>
