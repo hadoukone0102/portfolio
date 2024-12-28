@@ -92,7 +92,19 @@
             "messages":"Messages",
             "btn":"submit"
           }
+        },
+        
+        "MODALS": {
+          "title": "Oops!",
+          "email": "konehadou0201@gmail.com",
+          "DATA": {
+            "messages": "Oops! I haven't finished the APIs yet, but you can leave me a message at the following email: ",
+            "btn-close": "Close",
+            "Send-email": "Send an Email"
+          }
         }
+        
+        
     
       
 }

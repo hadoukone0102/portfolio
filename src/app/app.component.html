@@ -10,6 +10,30 @@
         <span></span>
     </div>
 </div>
-
 <!----------------------------------- loader ----------------------------------->
+
+<!------------------------------------Modal pour afficher les information ------------------->  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">{{'MODALS.title' | translate}}</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>{{'MODALS.DATA.messages' | translate }} <small>{{'MODALS.email' | translate}}</small></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="bg-danger p-2 border" data-bs-dismiss="modal">{{'MODALS.DATA.btn-close' | translate }}</button>
+          <button type="button" class="btn btn-primary" 
+            onclick="window.location.href='mailto:konehadou0201@gmail.com'">
+            {{ 'MODALS.DATA.Send-email' | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!------------------------------------Modal pour afficher les information ------------------->
+
 <router-outlet />

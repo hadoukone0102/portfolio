@@ -93,11 +93,17 @@
         "messages":"Messages",
         "btn":"Soummettre"
       }
+    },
+
+    "MODALS": {
+      "title": "Oups !",
+      "email": "konehadou0201@gmail.com",
+      "DATA": {
+        "messages": "Oups ! Les API ne sont pas encore prêtes, mais vous pouvez me laisser un message à l'adresse e-mail suivante : ",
+        "btn-close": "Fermer",
+        "Send-email": "Envoyer un e-mail"
+      }
     }
-
-
-    
-     
     
   }
   
