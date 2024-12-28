@@ -7,8 +7,8 @@
             </div>
             <div class="header-second">
                 <div class="change">
-                    <a href="#" class="langues active"   [class.active]="currentLanguage === 'en'" (click)="changeLanguage('en')">🌍En</a>
-                    <a href="#" class="langues"   [class.active]="currentLanguage === 'fr'" (click)="changeLanguage('fr')">🌍Fr</a>
+                    <a class="langues active"   [class.active]="currentLanguage === 'en'" (click)="changeLanguage('en')">🌍En</a>
+                    <a class="langues"   [class.active]="currentLanguage === 'fr'" (click)="changeLanguage('fr')">🌍Fr</a>
                 </div>
                 <!-- Autre contenu -->
                 <a href="/Hadou@Forms" class=" btn hello">{{ 'SAY_HELLO' | translate }}</a>

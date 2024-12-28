@@ -107,6 +107,7 @@ section{
                                 font-size: 1rem;
                                 display: block;
                                 padding: 1rem;
+                                margin: 0 1rem;
                             }
                         }
 
@@ -114,11 +115,22 @@ section{
                             color: $primary;
                             font-size: 1.1rem;
                             margin-bottom: 1rem;
+
+                            @include respond(small){
+                                margin: 1rem;
+                            }
                         }
+                        
                         h3{
                             color: $black;
                             font-size: 1rem;
-                            margin-bottom: 2rem;
+                            margin-bottom: 1rem;
+                            @include respond(small){
+                                margin-left:2rem;
+                                margin-right: 2rem;
+                                color: red;
+                                padding: 1rem;
+                            }
                         }
                         .tools{
                             display: flex;

@@ -83,7 +83,19 @@
         "MESSAGE": "Réalisé à la main par moi en 2024",
         "SIGNATURE": "Fait avec Angular"
       }
+    },
+
+    "FORMS": {
+      "Message": "Merci de prendre le temps de me contacter. Comment puis-je vous aider aujourd'hui ?",
+      "DATA":{
+        "name":"Nom :",
+        "email": "E-mail",
+        "messages":"Messages",
+        "btn":"Soummettre"
+      }
     }
+
+
     
      
     

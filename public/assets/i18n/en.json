@@ -82,9 +82,17 @@
             "MESSAGE": "Handcrafted by me 2024",
             "SIGNATURE": "Made with Angular"
             }
-        }
+        },
         
-          
+        "FORMS":{
+          "Message":"Thanks for taking the time to reach out. How can I help you today?",
+          "DATA":{
+            "name":"Nom :",
+            "email": "E-mail",
+            "messages":"Messages",
+            "btn":"submit"
+          }
+        }
     
       
 }

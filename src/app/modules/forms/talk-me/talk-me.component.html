@@ -1,23 +1,48 @@
 <header class="header">
     <div class="header-content">
-        <!-- première partie du header -->
+        <!-- première partie du header 0758581789 -->
         <div class="premier">
             <div class="header-first">
                 <i class="bi bi-amd"></i>
             </div>
             <div class="header-second">
                 <div class="change">
-                    <a href="#" class="langues active"  [class.active]="currentLanguage === 'en'" (click)="changeLanguage('en')">🌍En</a>
-                    <a href="#" class="langues"   [class.active]="currentLanguage === 'fr'" (click)="changeLanguage('fr')">🌍Fr</a>
+                    <a class="langues active"  [class.active]="currentLanguage === 'en'" (click)="changeLanguage('en')">🌍En</a>
+                    <a class="langues"   [class.active]="currentLanguage === 'fr'" (click)="changeLanguage('fr')">🌍Fr</a>
                 </div>
                 <!-- Autre contenu -->
-                <a (click)="toggleMenu()" class="hello"><i class="bi bi-list"></i></a>
-            </div>         
+                <a href="accueil" class="hello"><i class="bi bi-backspace"></i></a>
+            </div>
+            <div (click)="toggleMenu()" class="menu">
+                <i class="bi bi-list"></i>
+            </div>
         </div>
         <!-- première partie du header -->
+    </div>
+    <div class="header_img">
+        <img src="avatar.svg" alt="">
     </div>
 </header>
 
 <section class="forms">
-    
+    <div class="forms_content">
+        <h3 class="title">{{'FORMS.Message' | translate }}</h3>
+    </div>
+    <form>
+        <div class="info">
+            <div class="mb-1">
+                <label for="exampleInputname" class="form-label">{{ 'FORMS.DATA.name' | translate }}</label>
+                <input type="text" class="form-control" id="exampleInputname">
+            </div>
+            <div class="mb-2">
+                <label for="exampleInputEmail1" class="form-label">{{ 'FORMS.DATA.email' | translate }}</label>
+                <input type="email" class="form-control" id="exampleInputEmail1">
+            </div>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" style="min-height: 200px;" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">{{ 'FORMS.DATA.messages' | translate }}</label>
+        </div>
+        <button type="submit" class="btn">{{'FORMS.DATA.btn' | translate}}</button>
+    </form>
 </section>
